@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { UsrHomeComponent } from './components/usr-home/usr-home.component';
 import { UsrMenuComponent } from './utils/usr-menu/usr-menu.component'
 import { FilterComponent } from './components/filter/filter.component';
+import { PropertyCardComponent } from './components/property-card/property-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsrHomeComponent,
     UsrMenuComponent,
-    FilterComponent
+    FilterComponent,
+    PropertyCardComponent
   ],
   imports: [
     BrowserModule,

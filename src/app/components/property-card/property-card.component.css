@@ -1,0 +1,26 @@
+.card{
+
+    background-position: center;
+    background-size: cover;
+}
+
+.property_info{
+
+    margin: 0;
+
+    font-size: 1.2em;
+}
+
+.property_card{
+
+    height: 35vh;
+
+    background-color: rgba(68, 68, 68, 0.308);
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.image_property_card{
+
+    border-radius: 0.5em;
+}
