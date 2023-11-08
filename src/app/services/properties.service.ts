@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class PropertiesService {
 
-  private url: string = 'localhost:8080';
-  private api: string = '"api/v1/';
+  private url: string = 'http://localhost:8080/';
+  private api: string = 'api/v1/';
   private properties: string = 'inmuebles';
 
   constructor(private http: HttpClient) {}
