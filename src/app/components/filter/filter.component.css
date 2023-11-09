@@ -15,7 +15,7 @@
 
 .filter_button_arrow{
 
-    border: none;
+    border-radius: 0.2em;
 }
 
 .popup-items{
