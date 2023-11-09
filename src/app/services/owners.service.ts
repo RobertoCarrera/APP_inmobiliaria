@@ -4,16 +4,16 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class PropertiesService {
+export class OwnersService {
 
   private url: string = 'http://35.180.118.213/';
   private api: string = 'api/v1/';
-  private allProperties: string = 'inmuebles';
+  private allOwners: string = 'propietarios';
 
   constructor(private http: HttpClient) {}
   
-  getAllProperties(){
+  getAllOwners(){
 
-    return this.http.get(this.url+this.api+this.allProperties);
+    return this.http.get(this.url+this.api+this.allOwners);
   }
 }
