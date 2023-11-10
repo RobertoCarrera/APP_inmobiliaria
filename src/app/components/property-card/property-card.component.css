@@ -15,9 +15,10 @@
 
     height: 35vh;
 
-    background-color: rgba(68, 68, 68, 0.308);
+    /* background-color: rgba(50, 144, 172, 0.603); */
     border-radius: 0.5em;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid rgba(50, 144, 172, 0.603);
+    box-shadow: rgba(184, 30, 30, 0.16) 0px 1px 4px;
 }
 
 .image_property_card{
