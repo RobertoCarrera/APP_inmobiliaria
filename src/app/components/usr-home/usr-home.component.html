@@ -1,27 +1,34 @@
-<div *ngIf="properties" class="container-fluid p-0 bg-secondary">
-    <div class="row">
-        <div class="col-12">
-            <app-usr-menu></app-usr-menu>
-        </div>
-        <div class="col-12 pt-2">
-            <div class="row">
-                <div class="col-3">
-                    <app-filter [showTerms] = "true" [terms] = "terms"></app-filter>
-                </div>
-                <div class="col-3">
-                    <app-filter [showCategories] = "true" [categories] = "categories"></app-filter>
-                </div>
-                <div class="col-3">
-                    <app-filter [showLocations] = "true" [locations] = "locations"></app-filter>
-                </div>
-                <div class="col-3">
-                    <app-filter [showCharacteristics] = "true" [characteristics] = "characteristics"></app-filter>
+<div class="container-fluid vh-100">
+    <div *ngIf="showMenu == false" class="row d-flex justify-content-center align-items-center">
+        <div class="col-1 p-0 d-flex justify-content-center align-items-center menu_hidden">
+            <div class="row h-100 w-100 p-0 m-0 d-flex justify-content-center align-items-center">
+                <div class="col-12 h-100 p-0 m-0 d-flex justify-content-center align-items-center arrow_menu bg-warning" (click)="toggleMenu()">
+                    <i class="bi bi-caret-right-fill w-100 d-flex justify-content-center align-items-center"></i>
                 </div>
             </div>
         </div>
-        <div class="col-12 properties">
+        <div class="col-11 properties_hidden">
             <div class="row">
-                <div *ngFor="let property of properties" class="col-4">
+                <div *ngFor="let property of properties" class="col-xxl-12">
+                    <app-property-card [properties] = "property"></app-property-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="showMenu == true" class="row">
+        <div class="col-2 p-0 menu">
+            <div class="row h-100 p-0 m-0 d-flex justify-content-center align-items-center">
+                <div class="col-11 p-0 h-100 bg-warning">
+                    <app-usr-menu></app-usr-menu>
+                </div>
+                <div class="col-1 h-25 p-0 m-0 d-flex justify-content-center align-items-center arrow_menu bg-warning" (click)="toggleMenu()">
+                    <i class="bi bi-caret-left-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 properties">
+            <div class="row">
+                <div *ngFor="let property of properties" class="col-xxl-12">
                     <app-property-card [properties] = "property"></app-property-card>
                 </div>
             </div>

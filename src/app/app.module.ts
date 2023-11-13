@@ -5,8 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsrHomeComponent } from './components/usr-home/usr-home.component';
-import { UsrMenuComponent } from './utils/usr-menu/usr-menu.component'
-import { FilterComponent } from './components/filter/filter.component';
+import { UsrMenuComponent } from './utils/usr-menu/usr-menu.component';
 import { PropertyCardComponent } from './components/property-card/property-card.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { PropertyCardComponent } from './components/property-card/property-card.
     AppComponent,
     UsrHomeComponent,
     UsrMenuComponent,
-    FilterComponent,
     PropertyCardComponent
   ],
   imports: [
