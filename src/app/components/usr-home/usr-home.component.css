@@ -1,5 +1,31 @@
-.properties{
+.menu{
 
-    height: 85vh;
+    height: 100vh;
+
+}
+
+.menu_hidden{
+
+    height: 25vh;
+    width: 2vw;
+}
+
+.properties{
+    
+    height: 100vh;
+
     overflow-y: auto;
+}
+
+.properties_hidden{
+
+    height: 100vh;
+    width: 98vw;
+    overflow-y: auto;
+}
+
+.arrow_menu{
+
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
 }

@@ -5,9 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './property-card.component.html',
   styleUrls: ['./property-card.component.css']
 })
-export class PropertyCardComponent{
+export class PropertyCardComponent {
 
   @Input() properties: any = [];
-
-  constructor(){}
 }

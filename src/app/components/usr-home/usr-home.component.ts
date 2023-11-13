@@ -18,6 +18,8 @@ export class UsrHomeComponent {
   locations: any = [];
   characteristics: any = [];
 
+  showMenu: boolean = true;
+
   constructor(
     private propertiesService: PropertiesService,
     private termsService: TermsService,
@@ -57,6 +59,17 @@ export class UsrHomeComponent {
       this.characteristics = result;
       console.log(this.characteristics);
     })
+  }
+
+  toggleMenu(){
+
+    if(this.showMenu == true){
+      
+      this.showMenu = false;
+    }else{
+
+      this.showMenu = true;
+    }
   }
 
 }
